@@ -1,0 +1,161 @@
+// MEDIA QUERY
+
+
+@media screen and (max-width:1800px) {
+    .settings {
+        &-header {
+            text-align: left;
+
+            &-image {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        &-search {
+            padding: 5px 0;
+
+            h4 {
+                font-size: 1em;
+            }
+
+            &-small {
+                font-size: 12px;
+            }
+
+            &-icons {
+                padding: 10px 0;
+            }
+            
+            &-icon {
+                font-size: 20px;
+            }
+        }
+
+        &-timer {
+            padding: 0;
+
+            h4 {
+                font-size: 1em;
+            }
+
+            &-time {
+
+                h2 {
+                    font-size: 3em;
+                }
+            }
+
+            &-slider {
+                padding: 0;
+
+                input {
+                    
+                    &::-webkit-slider-runnable-track {
+                        height: 3px;
+                    }
+
+                    &::-webkit-slider-thumb {
+                        width: 15px;
+                        height: 15px;
+                        margin: -6px 0 0 0;
+                    }
+                }
+            }
+
+            &-button {
+                font-size: 18px;
+                padding: 7px 12px;
+            }
+        }
+
+        &-quotes {
+
+            &-header {
+                font-size: 1em;
+                padding-top: 5px;
+            }
+
+            &-text {
+                font-size: 12px;
+                padding-top: 5px;
+            }
+            
+            small {
+                font-size: 12px;
+            }
+        }
+
+        &-user {
+            width: 55px;
+            height: 55px;
+
+            &-icon {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    #startBtn, #pauseBtn, #resetBtn, #resumeBtn {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    #settings {
+        width: 30vw;
+        padding: 0;
+    }
+
+    .settings {
+
+        &-search {
+            padding: 0;
+
+            h4 {
+                font-size: 0.9em;
+            }
+
+            &-small {
+                font-size: 12px;
+            }
+            
+            &-icon {
+                font-size: 18px;
+                border-radius: 10px;
+            }
+
+            .col-lg-4 {
+                margin: 5px 0;
+                padding-left: 8px;
+                padding-right: 8px;
+                width: 33%;
+            }
+        }
+
+        &-user {
+            width: 45px;
+            height: 45px;
+
+            &-icon {
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        &-user-timezone {
+            width: 60px;
+            height: 30px;
+            
+            p {
+                font-size: 14px;
+            }
+        }
+
+    }
+}
